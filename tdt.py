@@ -79,7 +79,7 @@ def main():
         (img1.shape[1] + s_width - s_width // 5, b_height // 2),
         mean_color,
         8,
-        tipLength=5,
+        tipLength=0.6,
     )
 
     assert argv.scale > 0, "scale has to be a positive float"
