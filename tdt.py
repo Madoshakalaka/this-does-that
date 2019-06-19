@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import argparse
 from os import path
-from os.path import isfile
 from sys import stderr
 
 import numpy as np
@@ -80,6 +79,7 @@ def main():
         (img1.shape[1] + s_width - s_width // 5, b_height // 2),
         mean_color,
         8,
+        tipLength=5,
     )
 
     assert argv.scale > 0, "scale has to be a positive float"
@@ -106,7 +106,10 @@ def main():
         cv2.imwrite(default_name, frame)
 
     cv2.imshow(outname, frame)
-    cv2.waitKey()
+    while cv2.getWindowProperty(outname, cv2.WND_PROP_VISIBLE) == 1:
+        if cv2.waitKey(50) != -1:
+            break
+
     cv2.destroyAllWindows()
 
 
