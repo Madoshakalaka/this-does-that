@@ -16,4 +16,4 @@ If you have the following pictures:
 1. any python 3
 2. numpy and opencv-python as in requirements.txt
 
-for more help `./tdt.py -h`
+for more help `./tdt.py -h` such as image scaling and output filename
