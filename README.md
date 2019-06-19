@@ -10,9 +10,10 @@ If you have the following pictures:
 `./tdt.py thonk.png idea.jpg` will generate the following:
 ![thonk-idea.jpg](thonk-idea.png)
 
-for more help `./tdt.py -h`
 
 ## How to use
 
 1. any python 3
 2. numpy and opencv-python as in requirements.txt
+
+for more help `./tdt.py -h`
