@@ -3,7 +3,7 @@
 Handy command line tool to combine two images with an arrow.
 
 ## Showcase
-If you have the following pictures:
+Provided the following pictures:
 ![thonk.png](thonk.png)
 ![idea.jpg](idea.jpg)
 
